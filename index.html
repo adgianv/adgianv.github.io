@@ -1,14 +1,534 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
+    <meta name="description" content="Willy Wonkas - Personal Portfolio Website Template" />
+	<meta name="keywords" content="blog, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
+	<meta name="author" content="willy wonka" />
+    <title>Willy Wonkas - Personal Portfolio Website Template</title>
+  <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="images/favicon.png">
+   <!--favicon-img-->
+   <!--main css file should not be removed -->
+    <link rel="stylesheet" href="css/index.css">
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
 <body>
+    <!--contains all the div-->
+    <div id="all">
+    <!--mouse  follower-->
+        <div class="cursor"></div>
+    <!--mouse  follower-->
+    <!--loader-->
+        <div id="loader">
+            <span class="color">Angelo</span>Di Gianvito 
+        </div>
+    <!--loader-end-->
+    <!--link-screen-->
+        <div id="breaker">
+        </div>
+        <div id="breaker-two">
+        </div>
+    <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="#" data-text="HOME" id="home-link" >HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
+                <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
+                <a href="#" data-text="PORTFOLIO" id="blog-link" >PORTFOLIO</a>
+                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
+            </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+          <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+          <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+              <!--Social Media Links-->
+            <div class="social-media-links">
+                <a href="https://www.linkedin.com/in/angelo-d-157381105/"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+                <a href="https://github.com/adgianv?tab=repositories"><img src="images/github_logo.png" class="social-media" alt="twitter-logo"></a>
 
-    <h1>Hello, World!</h1>
-    <p>This is a simple HTML page.</p>
+            </div>
+            <!--Social Media Links end-->
+            <div class="header-content">
+                <div class="header-content-box">
+                <div class="firstline"><span class="color">Angelo </span>Di Gianvito</div>
+                <div class="firstline">Data <span class="color">Scientist </span></div>
+                <div class="secondline">
+                Skills in
+            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Data Science.", " Software Development.", " Machine Learning."," Statistics.", " Mathematics.", " Deep Learning." ]'></span>
+            <span class="slash">|</span>
+        </div>
+                    <div class="contact">
+                <a href="Mailto:a.digianvito@hotmail.it"><img src="images/mail.png" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
+                <a href="Tel:+393313144019"><img src="images/call.png" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
+                    </div>    
+            </div>
+            </div>
+            <!--header image-->
+            <div class="header-image">
+            <img src="images/angelo_selfie1.png" alt="logo">
+            </div>
+            <!--header image end-->
+        </div>
+           <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <div class="color-changer">
+            <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!--about content-->
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Me</span>
+                    <span class ="header-caption">Get to Know <span class="color"> me.</span></span>
+                </div>
+                <div class="about-main">
+            <div class="about-first-paragraph wow">
+            <!--about description-->
+               <span class="about-first-line">
+                    I'm a student of 
+                    <span class="color">Data Science</span>
+                     based in Barcelona, Spain </span>
+                     <br>
+               <span class="about-second-line"> 23 years old Data Science Student focusing on Machine Learning and Deep Learning. Software Development skills using mainly Python and C, with experience in R and C++.</span>
+               <div class="cv">
+                <a href="files/Angelo Di Gianvito - CV.docx"><button>Download <span class="colors">CV</span></button></a>
+            </div>
+            </div>
+            <!--about picture-->
+            <div class="about-img">
+                <img src="images/angelo_selfie_nobg.png" alt="Your Image">
+            </div>
+            </div>
+    
+            </div>
+            <div id="skills">
+                <div class="skills-header">
+                     Technical <span class="color"> Skills</span>
+                </div>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Python
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="html-progress wow">85%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                      C
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="js-progress wow">85%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        R
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="adobe-progress wow">80%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        SQL
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="php-progress wow">80%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        C++
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="jquery-progress wow">80%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Stata
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="seo-progress wow">90%</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--about end-->
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul >
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
+            <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
+             <div id="portfolio-content">
+                 <div class="portfolio portfolio-first">
+                     <div class="portfolio-image">
+                        <img src="images/Poland_apartment.jpg" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                         <h2>ML - Predicting Apartment Prices in Poland</h2>
+                         <p>Machine Learning Project to predict apartment prices in Poland main cities using Python</p>
+                         <div class="button"><a href="https://github.com/adgianv/ML-Predicting-House-Prices-in-Poland"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                     </div>
+                 </div>
+                 <div class="portfolio portfolio-first">
+                    <div class="portfolio-image">
+                       <img src="images/Football_players.jpg" alt="portfolio-first">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>ML - Predicting Football Players Positions</h2>
+                        <p>Machine Learning Project to predict Football Players Positions using Python (Random Forest, XGBoost, LGBM)</p>
+                        <div class="button"><a href="https://github.com/adgianv/ML-Predicting-Football-Players-Positions"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                 <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="images/Pacman_game.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>C - PacMan Game</h2>
+                        <p>C programming project recreating the 2D PacMan game using MiniLibX library and complex algorithmic structures</p>
+                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-third">
+                    <div class="portfolio-image">
+                        <img src="images/machine_learning_projects.jpg" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Machine learning and Data Science Projects</h2>
+                        <p>Python, Numpy, Pandas, Scikit-learn, Matplotlib, R</p>
+                        <div class="button"><a href="https://github.com/stars/adgianv/lists/machine-learning-projects"><button><span class="index"> View Projects<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class="portfolio-image">
+                        <img src="images/deep_learning_projects.jpg" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Deep learning Projects</h2>
+                        <p>Python, Tensorflow, Keras, PyTorch, Scikit-learn</p>
+                        <div class="button"><a href="#"><button><span class="index"> View Projects<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fifth">
+                    <div class=" portfolio-image">
+                        <img src="images/42_projects.jpg" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>42 Coding School Projects</h2>
+                        <p>Software Engineering School, projects in C and C++</p>
+                        <div class="button"><a href="https://github.com/adgianv/42CodingSchool"><button><span class="index"> View Projects<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-sixth">
+                    <div class="portfolio-image">
+                        <img src="images/software_engineering_projects.jpg" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Software Development Projects</h2>
+                        <p>Projects in C, C++, Python</p>
+                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                 </div>
+             </div>
+        <!--portfolio end-->
+        <!--blog-->
+        <div id="blog">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul >
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+        <div class="blog-header"> Portfolio</span>
+            <span class ="header-caption"> My Latest <span class="color"> projects.</span></span></div>
+            <div class="blog-content">
+                 <div class="blogs">
+                     <a href="https://github.com/adgianv/ML-Predicting-Football-Players-Positions">
+                     <div class="img">
+                        <img src="images/Football_players.jpg" alt="blog-one">
+                     </div>
+                     <div class="blog-text">
+                         <h3>ML - Predicting Football Players Positions</h3>
+                         <p>Machine Learning Project to predict Football Players Positions using Python (Random Forest, XGBoost, LGBM)</p>
+                     </div></a>
+                 </div> 
+                 <div class="blogs">
+                    <a href="https://github.com/adgianv/ML-Predicting-House-Prices-in-Poland">
+                    <div class="img">
+                       <img src="images/Poland_apartment.jpg" alt="blog-one">
+                    </div>
+                    <div class="blog-text">
+                        <h3>ML - Predicting Apartment Prices in Poland</h3>
+                        <p>Machine Learning Project to predict apartment prices in Poland main cities using Python</p>
+                    </div></a>
+                </div> 
+                 <div class="blogs">
+                    <a href="#">
+                    <div class="img">
+                       <img src="images/Pacman_game.jpg" alt="blog-one">
+                    </div>
+                    <div class="blog-text">
+                        <h3>C - PacMan Game</h3>
+                        <p>C programming project recreating the 2D PacMan game using MiniLibX library and complex algorithmic structures</p>
+                    </div></a>
+                </div> 
+                 <div class="blogs">
+                    <a href="https://github.com/stars/adgianv/lists/machine-learning-projects">
+                    <div class="img">
+                       <img src="images/machine_learning_projects.jpg" alt="blog-one">
+                    </div>
+                    <div class="blog-text">
+                        <h3>Machine learning and Data Science Projects</h3>
+                        <p>Python, Numpy, Pandas, Scikit-learn, Matplotlib, R</p>
+                    </div></a>
+                </div> 
+                 <div class="blogs">
+                    <a href="#">
+                    <div class="img">
+                       <img src="images/deep_learning_projects.jpg" alt="blog-one">
+                    </div>
+                    <div class="blog-text">
+                        <h3>Deep learning Projects</h3>
+                        <p>Python, Tensorflow, Keras, PyTorch, Scikit-learn</p>
+                    </div></a>
+                </div> 
+                 <div class="blogs">
+                    <a href="https://github.com/adgianv/42CodingSchool">
+                    <div class="img">
+                       <img src="images/42_projects.jpg" alt="blog-one">
+                    </div>
+                    <div class="blog-text">
+                        <h3>42 Coding School Project</h3>
+                        <p>Software Engineering School, projects in C and C++</p>
+                    </div></a>
+                </div> 
+                 <div class="blogs">
+                    <a href="#">
+                    <div class="img">
+                       <img src="images/software_engineering_projects.jpg" alt="blog-one">
+                    </div>
+                    <div class="blog-text">
+                        <h3>Software Development Projects</h3>
+                        <p>Projects in C, C++, Python</p>
+                    </div></a>
+                </div>      
+            </div>
+               <!--copyright-section You Can Remove After Downloading-->
+               <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
+                </div>
+               </div>
+       <!--copyright-section-->
+        </div>
+        <!--blog end-->
+        <!--contact-->
+     <div id="contact">
+        <div class="color-changer">
+            <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+         <div class="contact-header">Contact <span class="color"> Me</span>
+        <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
+        <div class="contact-content">
+            <!--Contact information-->
+             <div class="contact-info">
+                <div class="contact-info-header">
+                    Contact Info
+                </div>
+                <div class="contact-info-content">
+                <div class="contect-info-content-line">
+                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Name</h6>
+                        <p>Angelo Di Gianvito</p>
+                  </div>
+                </div>
+                <div class="contect-info-content-line">
+                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Location</h6>
+                      <p>Barcelona, Spain</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Call</h6>
+                      <p>+393313144019</p>
+                </div>
+              </div>
+              
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Email</h6>
+                      <p>a.digianvito@hotmail.it</p>
+                </div>
+              </div>
+                </div>
+            <!--Contact information end-->
+           </div>
+        </div>
+     </div>
+        <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--particles script-->
+    <script>
+  particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+    </script>
 
 </body>
 </html>
