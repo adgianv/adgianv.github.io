@@ -382,18 +382,33 @@ body{
     opacity: 1;
     transform: scale(1.1);
 }
-#breaker{
+/* #breaker{
     height: 100vh;
-    width: 200%;
-    background-color: #c70039;
-    opacity: 1;
-    animation: breakeranimate 2s linear;
+    width: 100vw;
+    background-color: #101010;
+    opacity: 0.7;
+    animation: breakeranimate 1s ease-in-out forwards;
     display: none;
     transition: all .4s ease;
     border-radius: 5px;
     z-index: 10;
     position: fixed;
-}
+} */
+/* #breaker 2 */
+/* #breaker {
+    height: 100vh;
+    width: 100vw;
+    background-color: #101010;
+    opacity: 0.8;
+    animation: breakeranimate 1s ease-in-out forwards;
+    display: none;
+    transition: all .4s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+} */
 @keyframes breakeranimate{
    0%{ transform : translateX(-100%)}
    50%{ transform : translateX(0%) }
@@ -475,7 +490,7 @@ body{
 }
 .about-second-line{
     opacity: .8;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 200;
 }
 .about-main{
@@ -533,6 +548,26 @@ body{
     opacity: 1;
     transform: scale(1.05);
 }
+
+
+/* Style for the button */
+.cv-button {
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: #c70039; /* Red background color */
+    color: white; /* Text color */
+    font-size: 20px;
+    text-decoration: none; /* Remove underline */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the button hover effect */
+.cv-button:hover {
+    background-color: #a30031; /* Darker red on hover */
+}
+
 #services{
     position: relative;
 }
@@ -1072,7 +1107,7 @@ padding-bottom: 40px;
 .contact-info{
     width: 40%;
     height: 500px;
-    background: url(../images/contact-back.jpg);
+    background: url(../images/orange_clouds.gif);
     background-position: center;
     background-size: cover;
     border-radius: 16px;
@@ -1460,7 +1495,7 @@ For devices with smaller width like mobile phone
     }
     .about-second-line{
         opacity: .8;
-        font-size: 15px;
+        font-size: 12px;
     }
     .about-main{
         display: flex;
@@ -1914,7 +1949,7 @@ for tabs and large phones
     }
     .about-second-line{
         opacity: .8;
-        font-size: 24px;
+        font-size: 16px;
     }
     .about-main{
         display: flex;
@@ -2300,8 +2335,13 @@ for tabs and large phones
          font-size: 46px;
      }
     .about-second-line{
-        opacity: .8;
-        font-size: 28px;
+        opacity: .9;
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .about-sublist{
+        opacity: .7;
+        font-size: 18px;
         font-weight: 200;
     }
     .cv a button{
