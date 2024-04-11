@@ -489,8 +489,13 @@ body{
     display: block;
 }
 .about-second-line{
-    opacity: .8;
+    opacity: .9;
     font-size: 13px;
+    font-weight: 200;
+}
+.about-sublist{
+    opacity: .7;
+    font-size: 11px;
     font-weight: 200;
 }
 .about-main{
@@ -1508,8 +1513,12 @@ For devices with smaller width like mobile phone
         display: block;
     }
     .about-second-line{
-        opacity: .8;
+        opacity: .9;
         font-size: 12px;
+    }
+    .about-sublist{
+        opacity: .7;
+        font-size: 10px;
     }
     .about-main{
         display: flex;
@@ -1962,8 +1971,12 @@ for tabs and large phones
         display: block;
     }
     .about-second-line{
-        opacity: .8;
+        opacity: .9;
         font-size: 16px;
+    }
+    .about-sublist{
+        opacity: .7;
+        font-size: 13px;
     }
     .about-main{
         display: flex;
