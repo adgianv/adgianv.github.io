@@ -483,10 +483,14 @@ body{
     font-size: 40px;
 }
 .about-first-line{
-    font-size: 35px;
+    font-size: 28px;
     opacity: 1;
     margin-bottom: 10px;
     display: block;
+    color: whitesmoke;
+    font-family: raleway;
+    padding:10px;
+    font-weight: 900;
 }
 .about-second-line{
     opacity: .9;
@@ -1126,7 +1130,7 @@ padding-bottom: 40px;
 .contact-info{
     width: 40%;
     height: 500px;
-    background: url(../images/orange_clouds.gif);
+    /* background: url(../images/orange_clouds.gif); */
     background-position: center;
     background-size: cover;
     border-radius: 16px;
@@ -1392,6 +1396,7 @@ form button:hover{
   list-style: none;
 }
 
+
 /*
 
 For devices with smaller width like mobile phone
@@ -1511,6 +1516,10 @@ For devices with smaller width like mobile phone
         opacity: 1;
         margin-bottom: 10px;
         display: block;
+        color: whitesmoke;
+        font-family: raleway;
+        padding:10px;
+        font-weight: 900;
     }
     .about-second-line{
         opacity: .9;
@@ -1965,10 +1974,14 @@ for tabs and large phones
         font-size: 35px
     }
     .about-first-line{
-        font-size: 32px;
+        font-size: 28px;
         opacity: 1;
         margin-bottom: 10px;
         display: block;
+        color: whitesmoke;
+        font-family: raleway;
+        padding:10px;
+        font-weight: 900;
     }
     .about-second-line{
         opacity: .9;
@@ -2353,10 +2366,14 @@ for tabs and large phones
         border-radius: 40px;
     }
     .about-first-line{
-        font-size: 45px;
+        font-size: 32px;
         opacity: 1;
         margin-bottom: 10px;
         display: block;
+        color: whitesmoke;
+        font-family: raleway;
+        padding:10px;
+        font-weight: 900;
     }
      .about-first-line .color{
          font-size: 46px;
