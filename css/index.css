@@ -496,6 +496,7 @@ body{
     opacity: .9;
     font-size: 13px;
     font-weight: 200;
+    /* justify-content: center; */
 }
 .about-sublist{
     opacity: .7;
@@ -1524,6 +1525,7 @@ For devices with smaller width like mobile phone
     .about-second-line{
         opacity: .9;
         font-size: 12px;
+        /* justify-content: center; */
     }
     .about-sublist{
         opacity: .7;
@@ -1986,6 +1988,7 @@ for tabs and large phones
     .about-second-line{
         opacity: .9;
         font-size: 16px;
+        /* justify-content: center; */
     }
     .about-sublist{
         opacity: .7;
@@ -2382,6 +2385,7 @@ for tabs and large phones
         opacity: .9;
         font-size: 20px;
         font-weight: 200;
+        /* justify-content: center; */
     }
     .about-sublist{
         opacity: .7;
