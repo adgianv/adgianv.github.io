@@ -1,0 +1,150 @@
+Angelo Di Gianvito
+Email: adgianv@gmail.com​
+
+​
+
+Phone: +39 3313144019 ​
+
+Github: adgianv​
+
+LinkedIn: angelo-di-gianvito
+
+WORK EXPERIENCE
+Machine Learning Engineer (Full-Time) – MantisNLP​
+●​
+●​
+●​
+●​
+
+●​
+●​
+●​
+●​
+
+​
+
+●​
+
+​
+
+(September 2024 - Present)
+
+​
+
+​
+
+​
+
+​
+
+(February 2025 - Present)
+
+Co-founded and led development of the first AI related project on the SEI blockchain, focused on AI driven automation of Decentralized
+Finance actions and protocol interaction.
+Full-stack development of Cambrian App Builder, a Web app currently in production phase, to build and deploy fully functional applications
+using natural language prompts.
+Developed sei-agent-kit, an open-source Software Development Toolkit enabling AI agents to interact with SEI blockchain protocols.
+Built a NextJS frontend app for the agentic chatbot with blockchain capabilities in the agent-launcher open source project.
+A $1 million hackathon was organized by SEI with our tools as the core development framework, requiring participants to build using them.
+
+Machine Learning Engineer (Part-Time) – People First​
+●​
+●​
+
+​
+
+Design and deploy LLM-powered NLP systems for classification, information retrieval, document processing pipelines and other language
+understanding tasks in production environments.
+Led 10+ projects in development and client communication, responsible for timely delivery and quality of outcomes.
+Developed and maintained open-source projects with 100+ stars on Github like Sieves (Library for NLP task prototyping using LLMs) and
+Nervaluate (Library for NER evaluation).
+Selected projects currently in production:
+○​
+Fraud detection system for an established financial client combining LLMs and other mathematical and statistical
+methodologies (87% accuracy).
+○​
+Retrieval-Augmented Generation (RAG) system to query a large OCR- and VLM-processed database of 20k PDFs.
+
+Co-Founder & AI Engineer – CambrianAI​
+●​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+(May 2024 - December 2024)
+
+Machine Learning engineer owning the design and implementation of the company’s AI systems from prototyping to production.
+Built an AI Agent with a LLM-based orchestrator to collect user interaction data, perform knowledge retrieval, and generate tailored
+recommendations.
+Integrated multiple techniques including agent orchestration, RAG, web scraping, and structured generation.
+
+EDUCATION
+MSc Data Science, Pompeu Fabra University​
+●​
+●​
+●​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+​
+
+(February 2023 - November 2024)
+
+Intensive software engineering program focused on C and C++ with an emphasis on low-level systems, algorithms, and concurrency.
+​
+
+​
+
+Courses: Quantitative Methods (I–III), Financial Markets, Brand Management, Marketing Strategy.
+
+SKILLS & ADDITIONAL TRAINING
+●​
+●​
+●​
+●​
+
+(September 2023 - July 2024)
+
+Thesis: War through the lens of AI - Using a FineTuned ResNet 50 model to classify Ukraine War Images and run a historical
+analysis (Published by the university). Code available here.
+
+BSc Economics and Business Economics, Maastricht University​
+●​
+
+​
+
+GPA: 9.1/10 (Top 4%)
+Key coursework: Machine Learning, Advanced NLP, Deep Learning for Computer Vision.
+
+Software Development, 42 Roma Luiss​
+●​
+
+​
+
+Programming: Python, C, TypeScript, R, SQL, Git, Bash, Jupyter
+ML/NLP: PyTorch, HuggingFace Transformers, spaCy, LoRA fine-tuning, RAG systems, MLflow
+Data & Infra: Postgres, BigQuery, MongoDB, Neo4j, Spark, GCP/AWS, Docker
+Languages: English (C2), Italian (Native), Spanish (C1), French (B2)
+
+(August 2018 - February 2022)
+
+
