@@ -217,6 +217,22 @@ p {
     border-radius: 20px;
 }
 
+/* Phone layout */
+@media (max-width: 640px) {
+    .top-nav {
+        padding: 1.25rem 16px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .content-container {
+        padding: 0 16px;
+        margin: 2rem auto;
+    }
+}
+
 /* Contact */
 .contact-links-vertical {
     display: flex;
