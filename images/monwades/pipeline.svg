@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1200" height="420" rx="18" fill="#f7f8fa"/>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa5b1"/>
+    </marker>
+  </defs>
+
+  <text x="40" y="52" font-size="13" font-weight="600" letter-spacing="2" fill="#7b8794">INPUTS</text>
+  <g font-size="14" fill="#323f4b">
+    <rect x="40" y="68" width="250" height="38" rx="19" fill="#fff" stroke="#d9dee4"/>
+    <text x="165" y="92" text-anchor="middle">Multi-date VHR satellite imagery</text>
+    <rect x="310" y="68" width="230" height="38" rx="19" fill="#fff" stroke="#d9dee4"/>
+    <text x="425" y="92" text-anchor="middle">UNOSAT damage points</text>
+    <rect x="560" y="68" width="250" height="38" rx="19" fill="#fff" stroke="#d9dee4"/>
+    <text x="685" y="92" text-anchor="middle">Settlement &amp; no-analysis zones</text>
+  </g>
+  <path d="M165 106 L165 126 M425 106 L425 126 M685 106 L685 126 M140 126 L685 126" stroke="#9aa5b1" stroke-width="2" fill="none"/>
+  <path d="M140 126 L140 152" stroke="#9aa5b1" stroke-width="2" marker-end="url(#arr)"/>
+
+  <g>
+    <rect x="40" y="160" width="200" height="170" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <rect x="40" y="160" width="200" height="6" rx="3" fill="#2f6fde"/>
+    <text x="62" y="198" font-size="13" font-weight="700" fill="#2f6fde">A</text>
+    <text x="62" y="224" font-size="19" font-weight="700" fill="#1f2933">Preprocess</text>
+    <text x="62" y="254" font-size="13.5" fill="#52606d">Align scenes on a</text>
+    <text x="62" y="273" font-size="13.5" fill="#52606d">common grid; rasterise</text>
+    <text x="62" y="292" font-size="13.5" fill="#52606d">vector labels</text>
+  </g>
+  <path d="M244 245 L266 245" stroke="#9aa5b1" stroke-width="2" marker-end="url(#arr)"/>
+
+  <g>
+    <rect x="270" y="160" width="200" height="170" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <rect x="270" y="160" width="200" height="6" rx="3" fill="#2f6fde"/>
+    <text x="292" y="198" font-size="13" font-weight="700" fill="#2f6fde">B</text>
+    <text x="292" y="224" font-size="19" font-weight="700" fill="#1f2933">Sequences</text>
+    <text x="292" y="254" font-size="13.5" fill="#52606d">224-px tiles stacked</text>
+    <text x="292" y="273" font-size="13.5" fill="#52606d">through time; per-tile</text>
+    <text x="292" y="292" font-size="13.5" fill="#52606d">train / val / test splits</text>
+  </g>
+  <path d="M474 245 L496 245" stroke="#9aa5b1" stroke-width="2" marker-end="url(#arr)"/>
+
+  <g>
+    <rect x="500" y="160" width="200" height="170" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <rect x="500" y="160" width="200" height="6" rx="3" fill="#7c5cd6"/>
+    <text x="522" y="198" font-size="13" font-weight="700" fill="#7c5cd6">C</text>
+    <text x="522" y="224" font-size="19" font-weight="700" fill="#1f2933">Pretrain</text>
+    <text x="522" y="254" font-size="13.5" fill="#52606d">Self-supervised</text>
+    <text x="522" y="273" font-size="13.5" fill="#52606d">masked autoencoder on</text>
+    <text x="522" y="292" font-size="13.5" fill="#52606d">unlabelled tiles</text>
+  </g>
+  <path d="M704 245 L726 245" stroke="#9aa5b1" stroke-width="2" marker-end="url(#arr)"/>
+
+  <g>
+    <rect x="730" y="160" width="200" height="170" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <rect x="730" y="160" width="200" height="6" rx="3" fill="#e4572e"/>
+    <text x="752" y="198" font-size="13" font-weight="700" fill="#e4572e">D</text>
+    <text x="752" y="224" font-size="19" font-weight="700" fill="#1f2933">Finetune</text>
+    <text x="752" y="254" font-size="13.5" fill="#52606d">Siamese before/after</text>
+    <text x="752" y="273" font-size="13.5" fill="#52606d">change detection,</text>
+    <text x="752" y="292" font-size="13.5" fill="#52606d">per-patch labels</text>
+  </g>
+  <path d="M934 245 L956 245" stroke="#9aa5b1" stroke-width="2" marker-end="url(#arr)"/>
+
+  <g>
+    <rect x="960" y="160" width="200" height="170" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <rect x="960" y="160" width="200" height="6" rx="3" fill="#1f9d8b"/>
+    <text x="982" y="198" font-size="13" font-weight="700" fill="#1f9d8b">E</text>
+    <text x="982" y="224" font-size="19" font-weight="700" fill="#1f2933">Evaluate</text>
+    <text x="982" y="254" font-size="13.5" fill="#52606d">Per-city reports on</text>
+    <text x="982" y="273" font-size="13.5" fill="#52606d">regions the model</text>
+    <text x="982" y="292" font-size="13.5" fill="#52606d">never saw</text>
+  </g>
+
+  <text x="40" y="380" font-size="14" fill="#7b8794">One CLI, one container: each stage is a subcommand, and every artifact is keyed to the git commit that produced it.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1200" height="400" rx="18" fill="#f7f8fa"/>
+  <defs>
+    <marker id="a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa5b1"/>
+    </marker>
+  </defs>
+
+  <g>
+    <rect x="40" y="90" width="190" height="130" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <text x="62" y="126" font-size="12" font-weight="700" letter-spacing="1.5" fill="#2f6fde">1 · CONFIGURE</text>
+    <text x="62" y="156" font-size="18" font-weight="700" fill="#1f2933">Experiment</text>
+    <text x="62" y="178" font-size="18" font-weight="700" fill="#1f2933">branch</text>
+    <text x="62" y="202" font-size="13" fill="#52606d">YAML edits only</text>
+  </g>
+  <path d="M236 155 L266 155" stroke="#9aa5b1" stroke-width="2" marker-end="url(#a4)"/>
+  <g>
+    <rect x="270" y="90" width="190" height="130" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <text x="292" y="126" font-size="12" font-weight="700" letter-spacing="1.5" fill="#2f6fde">2 · CHECK</text>
+    <text x="292" y="156" font-size="18" font-weight="700" fill="#1f2933">CI</text>
+    <text x="292" y="182" font-size="13" fill="#52606d">lint · tests ·</text>
+    <text x="292" y="200" font-size="13" fill="#52606d">config validation</text>
+  </g>
+  <path d="M466 155 L496 155" stroke="#9aa5b1" stroke-width="2" marker-end="url(#a4)"/>
+  <g>
+    <rect x="500" y="90" width="190" height="130" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <text x="522" y="126" font-size="12" font-weight="700" letter-spacing="1.5" fill="#2f6fde">3 · BUILD</text>
+    <text x="522" y="156" font-size="18" font-weight="700" fill="#1f2933">Container</text>
+    <text x="522" y="182" font-size="13" fill="#52606d">code + config baked</text>
+    <text x="522" y="200" font-size="13" fill="#52606d">into one image</text>
+  </g>
+  <path d="M696 155 L726 155" stroke="#9aa5b1" stroke-width="2" marker-end="url(#a4)"/>
+  <g>
+    <rect x="730" y="90" width="190" height="130" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <text x="752" y="126" font-size="12" font-weight="700" letter-spacing="1.5" fill="#2f6fde">4 · RUN</text>
+    <text x="752" y="156" font-size="18" font-weight="700" fill="#1f2933">GPU cluster</text>
+    <text x="752" y="182" font-size="13" fill="#52606d">Apptainer job via</text>
+    <text x="752" y="200" font-size="13" fill="#52606d">HTCondor scheduler</text>
+  </g>
+  <path d="M926 155 L956 155" stroke="#9aa5b1" stroke-width="2" marker-end="url(#a4)"/>
+  <g>
+    <rect x="960" y="90" width="200" height="130" rx="14" fill="#fff" stroke="#d9dee4"/>
+    <text x="982" y="126" font-size="12" font-weight="700" letter-spacing="1.5" fill="#2f6fde">5 · TRACK</text>
+    <text x="982" y="156" font-size="18" font-weight="700" fill="#1f2933">Artifacts</text>
+    <text x="982" y="182" font-size="13" fill="#52606d">object storage +</text>
+    <text x="982" y="200" font-size="13" fill="#52606d">MLflow metrics</text>
+  </g>
+
+  <path d="M1060 226 C 1060 300, 600 300, 600 300 C 135 300, 135 226, 135 226" stroke="#c3cbd4" stroke-width="2" fill="none" stroke-dasharray="6 6" marker-end="url(#a4)"/>
+  <rect x="440" y="282" width="320" height="36" rx="18" fill="#fff" stroke="#d9dee4"/>
+  <text x="600" y="306" text-anchor="middle" font-size="14" fill="#323f4b">every artifact named by its git commit</text>
+
+  <text x="40" y="364" font-size="14" fill="#7b8794">Researchers launch experiments from a branch, with no cluster login needed. Any model or dataset traces back to the exact code that made it.</text>
+</svg>
