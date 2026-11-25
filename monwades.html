@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MonWaDes - Angelo Di Gianvito</title>
     <meta name="description"
-        content="MonWaDes: a deep-learning pipeline that compares before/after satellite images to map building destruction in conflict-affected cities.">
+        content="MonWaDes: detecting building destruction in conflict areas from before/after satellite images with Vision Transformers.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css?v=3">
     <link rel="icon" type="image/png" href="images/icon-computer.png">
 </head>
 
@@ -30,48 +30,19 @@
         <header class="pp-header">
             <p class="pp-kicker"><span class="pp-dot"></span>MonWaDes &middot; Ongoing research</p>
             <h1 class="pp-title">Detecting war damage from space</h1>
-            <p class="pp-lede">Satellites photograph cities before and after conflict, but turning those images into
-                a map of destroyed buildings is still mostly manual work. MonWaDes is a deep-learning pipeline that
-                learns to spot building destruction by comparing before and after images, so damage assessment can
-                scale to new cities and new conflicts.</p>
-            <div class="project-tags pp-tags">
-                <span>Computer Vision</span>
-                <span>Vision Transformers</span>
-                <span>Self-supervised Learning</span>
-                <span>Remote Sensing</span>
-                <span>PyTorch</span>
-            </div>
+            <p class="pp-lede">A deep-learning model that compares satellite images taken before and after a
+                conflict to find destroyed buildings.</p>
         </header>
 
         <div class="stat-row">
             <div class="stat"><span class="stat-num">15</span><span class="stat-label">cities</span></div>
-            <div class="stat"><span class="stat-num">3</span><span class="stat-label">conflict-affected
-                    regions</span></div>
-            <div class="stat"><span class="stat-num">ViT</span><span class="stat-label">Vision Transformer
-                    backbone</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">regions</span></div>
+            <div class="stat"><span class="stat-num">ViT</span><span class="stat-label">backbone</span></div>
         </div>
 
         <section class="pp-section">
-            <h2>Why this is hard</h2>
-            <p>Humanitarian agencies such as UNOSAT produce damage assessments by having analysts inspect satellite
-                imagery building by building. These maps matter for aid planning, reconstruction and accountability,
-                but they are slow and expensive to make, so many cities and dates are never covered.</p>
-            <ul class="pp-list">
-                <li><strong>The signal is the difference.</strong> Damage shows up as a change between two dates, and
-                    it has to be told apart from changes in season, light and sensor.</li>
-                <li><strong>Every city is different.</strong> Building styles, materials, sun angles and satellites
-                    all vary across regions and dates.</li>
-                <li><strong>Labels are scarce.</strong> Expert damage labels exist only for some places and some
-                    dates.</li>
-                <li><strong>It has to work where nobody has labelled yet.</strong> That is the whole point.</li>
-            </ul>
-        </section>
-
-        <section class="pp-section">
             <h2>The data</h2>
-            <p>Multi-date, very-high-resolution satellite imagery of 15 cities in three regions. Supervision comes
-                from UNOSAT damage assessments: expert-annotated points marking damaged and destroyed buildings at
-                specific dates.</p>
+            <p>Satellite imagery of 15 cities, labelled with UNOSAT damage assessments.</p>
             <div class="city-groups">
                 <div class="city-group">
                     <h3>Ukraine</h3>
@@ -95,89 +66,54 @@
         </section>
 
         <section class="pp-section">
-            <h2>Vision Transformers, in two steps</h2>
-
-            <h3 class="pp-sub">1. Learning what cities look like from above</h3>
-            <p>Labelled damage is rare, but unlabelled satellite imagery is plentiful. So a Vision Transformer is
-                first trained without labels, as a masked autoencoder: most of each tile is hidden, and the model
-                learns to rebuild what it can't see. Along the way it learns what overhead urban scenes look
-                like.</p>
+            <h2>The model</h2>
+            <p>A Vision Transformer first learns what cities look like from above, without labels.</p>
             <figure class="pp-figure">
                 <div class="diagram"><img src="images/monwades/mae_pretraining.svg" loading="lazy"
                         alt="Diagram: an unlabelled tile with most of its patches hidden goes through an encoder and a decoder that reconstruct the full tile."></div>
-                <figcaption>Masked-autoencoder pretraining: hide most of the patches and learn to reconstruct
-                    them.</figcaption>
             </figure>
 
-            <h3 class="pp-sub">2. Comparing before and after</h3>
-            <p>The pretrained encoder then becomes both branches of a Siamese network. The before and after images
-                of the same place go through the same encoder, and the model compares their features patch by patch
-                to estimate where buildings were destroyed.</p>
+            <p>Then it compares the before and after image of each place to spot what was destroyed.</p>
             <figure class="pp-figure">
                 <div class="diagram"><img src="images/monwades/siamese_model.svg" loading="lazy"
-                        alt="Diagram: before and after tiles pass through two ViT encoders with shared weights; their patch features are compared and fed to a head that outputs a grid of damage scores."></div>
-                <figcaption>One shared ViT encoder, a per-patch comparison and a damage head. The coloured cells
-                    are illustrative, not a real prediction.</figcaption>
+                        alt="Diagram: before and after tiles pass through two ViT encoders with shared weights; their features are compared and fed to a head that outputs a grid of damage scores."></div>
             </figure>
         </section>
 
         <section class="pp-section">
-            <h2>Inside the embedding space</h2>
-            <p>The encoder turns every tile into an embedding: a vector that summarises what the place looks like.
-                Projecting thousands of them down to two dimensions gives a map of how the model sees the cities.
-            </p>
+            <h2>Embeddings</h2>
+            <p>How the model sees thousands of satellite tiles, projected to 2D.</p>
             <figure class="pp-figure">
                 <div class="umap-card">
                     <img src="images/monwades/embeddings_umap.png" loading="lazy"
-                        alt="Scatter plot of thousands of satellite-tile embeddings projected to two dimensions with UMAP, coloured by region: Gaza in blue, Syria in orange, Ukraine in green.">
+                        alt="Scatter plot of satellite-tile embeddings projected to two dimensions with UMAP, coloured by region: Gaza in blue, Syria in orange, Ukraine in green.">
                 </div>
                 <div class="umap-legend">
                     <span><i style="background:#2a78d6"></i>Gaza</span>
                     <span><i style="background:#eb6834"></i>Syria</span>
                     <span><i style="background:#1aa87a"></i>Ukraine</span>
                 </div>
-                <figcaption>Each dot is one satellite tile, placed by its embedding and projected to 2D with UMAP.
-                </figcaption>
             </figure>
         </section>
 
         <section class="pp-section">
-            <h2>From raw imagery to evaluation</h2>
-            <p>Everything runs as one five-stage pipeline. Raw scenes are aligned on a common grid, cut into tiles
-                stacked through time, used for pretraining and fine-tuning, and finally evaluated city by city,
-                including on places the model never saw during training.</p>
+            <h2>The pipeline</h2>
+            <p>Five stages, from raw imagery to evaluation, running on a GPU cluster.</p>
             <figure class="pp-figure">
                 <div class="diagram"><img src="images/monwades/pipeline.svg" loading="lazy"
                         alt="Diagram: imagery, UNOSAT damage points and settlement zones feed five stages: Preprocess, Sequences, Pretrain, Finetune, Evaluate."></div>
-                <figcaption>Five stages, one command-line tool, one container.</figcaption>
             </figure>
-        </section>
-
-        <section class="pp-section">
-            <h2>Built for reproducible research</h2>
-            <p>Many experiments run in parallel on a shared GPU cluster, so the infrastructure matters as much as
-                the model. Each experiment is a git branch with a config change. CI checks it and builds a container,
-                the run is launched on the cluster, and every dataset and model is named after the commit that
-                produced it.</p>
-            <figure class="pp-figure">
-                <div class="diagram"><img src="images/monwades/experiment_workflow.svg" loading="lazy"
-                        alt="Diagram: experiment branch, CI checks, container build, GPU cluster run and artifact tracking, with every artifact named by its git commit."></div>
-                <figcaption>From a config change on a branch to a tracked run on the GPU cluster.</figcaption>
-            </figure>
-
-            <div class="stack">
-                <div><h3>ML</h3><p>PyTorch &middot; PyTorch Lightning &middot; Hugging Face Transformers &middot; timm</p></div>
-                <div><h3>Geospatial</h3><p>rasterio &middot; GeoPandas &middot; xarray &middot; Zarr</p></div>
-                <div><h3>Engineering</h3><p>Python &middot; Click &middot; Pydantic &middot; uv &middot; pytest</p></div>
-                <div><h3>Infra</h3><p>Docker &middot; Apptainer &middot; HTCondor &middot; GitLab CI &middot; MLflow</p></div>
+            <div class="project-tags pp-tags">
+                <span>PyTorch</span>
+                <span>Hugging Face</span>
+                <span>Zarr</span>
+                <span>Docker</span>
+                <span>GitLab CI</span>
+                <span>MLflow</span>
             </div>
         </section>
 
-        <section class="pp-section pp-status">
-            <h2>Status</h2>
-            <p>This is ongoing research. Results are being prepared for publication and will be added here once
-                they are public.</p>
-        </section>
+        <p class="pp-status">Paper in preparation. Results will be added once published.</p>
 
     </main>
 
