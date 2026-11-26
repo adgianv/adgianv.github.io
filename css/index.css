@@ -165,6 +165,33 @@ p {
     font-size: 1.2rem;
 }
 
+.about-text-narrative .pp-kicker {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
+}
+
+.about-text-narrative .pp-dot {
+    flex-shrink: 0;
+}
+
+.about-text-narrative a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.about-text-narrative a:hover {
+    border-bottom-color: #e4572e;
+}
+
+.about-text-narrative .btn-outline {
+    border: 1px solid #fff;
+}
+
+.about-text-narrative .btn-outline:hover {
+    border-color: #fff;
+}
+
 .cv-section-narrative {
     margin-top: 3rem;
 }

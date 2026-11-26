@@ -1,5 +1,5 @@
 const textDisplay = document.getElementById('typewriter');
-const phrases = ['Machine Learning Engineer', 'AI Engineer', 'Data Scientist', 'Sofware Developer', 'NLP', 'Computer Vision', 'Deep Learning'];
+const phrases = ['Computer Vision Research Engineer', 'Software Engineer', 'Vision Transformers', 'Satellite Imagery', 'Deep Learning', 'Teaching machines to see'];
 let i = 0;
 let j = 0;
 let currentPhrase = [];
